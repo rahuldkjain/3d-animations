@@ -77,7 +77,7 @@ const Text = () => {
 };
 
 const Clock = () => {
-  const timeGroup = useRef(null);
+  const timeGroup = useRef<THREE.Group>(null);
 
   useFrame((state, delta) => {
     if (timeGroup?.current) {
