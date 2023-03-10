@@ -6,7 +6,8 @@ html, body, #root {
 }
 
 canvas {
-    height: 100vh;
+    height: var(--100vh, 100vh);
+    max-height: -webkit-fill-available;
     width: 100%;
     margin: 0;
     overflow-x: hidden;

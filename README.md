@@ -1,10 +1,10 @@
 # 3d-animations
 
-[Rahul's](https://rahuldkjain.github.io) playground to experiment with everything 3D.
+[Rahul's](https://rahuldkjain.github.io) playground to experiment with everything 3D using three.js.
 
 ## List of animations
 
-- [3D digital clock]()
+- [3D digital clock](https://3d-animations.vercel.app/digital-clock)
 
 ## Attributes
 
