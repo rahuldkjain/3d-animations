@@ -1,7 +1,7 @@
 html, body, #root {
     width: 100%;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     background: #F5F5F5;
 }
 
@@ -10,5 +10,5 @@ canvas {
     max-height: -webkit-fill-available;
     width: 100%;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
