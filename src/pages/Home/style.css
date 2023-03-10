@@ -1,0 +1,14 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background: #F5F5F5;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
