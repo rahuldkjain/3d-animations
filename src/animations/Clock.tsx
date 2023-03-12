@@ -1,14 +1,9 @@
-import {
-  Center,
-  OrbitControls,
-  Text3D,
-  useMatcapTexture,
-} from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
 // import { Perf } from "r3f-perf";
 import { useEffect, useRef, useState } from "react";
-import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
+import { Center, OrbitControls, Text3D, useTexture } from "@react-three/drei";
 import { formatDate } from "../utils/dates";
+import * as THREE from "three";
 
 const timeArgs = {
   font: "./fonts/orbitron_regular.json",
@@ -26,7 +21,9 @@ const matcapMaterial = new THREE.MeshMatcapMaterial();
 
 const Text = () => {
   const [time, setTime] = useState(formatDate(new Date()));
-  const [matcapTexture] = useMatcapTexture("2A2A2A_B3B3B3_6D6D6D_848C8C", 256);
+  const matcapTexture = useTexture(
+    "./textures/2A2A2A_B3B3B3_6D6D6D_848C8C.png"
+  );
 
   useEffect(() => {
     matcapTexture.encoding = THREE.sRGBEncoding;
